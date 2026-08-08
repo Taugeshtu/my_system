@@ -48,3 +48,16 @@ python3 _tools/regenerate_work.py
 - Respects `.gitignore` entries and a built-in exclude list (`node_modules`, `build`, `dist`, etc.).
 - For projects with a `work/` _directory_: symlinks the whole dir and drops a `_root.desktop` file inside for easy navigation back to project root.
 - For projects with only a `work.md` / `todo.md` _file_: symlinks the file, plus a `root--` symlink to the project root.
+
+## 5. Ingress Router (`to-ingress`)
+
+Moves files or directories into the ingress heap (`~/00_INGRESS`) and appends a timestamped origin trace entry into today's daily log (`YYYY-MM-DD.md`).
+
+```bash
+to-ingress <file_or_dir> [more_files...]
+```
+
+- Accepts one or more file or directory paths.
+- Moves targets directly into `$HOME/00_INGRESS/`.
+- Appends a log line formatted with time, filename, and original path to `$HOME/00_INGRESS/YYYY-MM-DD.md`.
+- _Note_: Ingress path `$HOME/00_INGRESS` is currently hardcoded in the script and might need to be changed if path layout differs.
