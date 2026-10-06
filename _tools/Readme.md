@@ -2,12 +2,12 @@
 
 Command-line utilities for `my_system`.
 
-## 1. Domain Index Builder (`build_index.py`)
+## 1. Domain Index Builder (`regenerate_index.py`)
 
 Scans a domain directory, parses `card.md` files from immediate subdirectories, and compiles a standardized markdown table in `index.md`.
 
 ```bash
-python3 _tools/build_index.py [target_dir] [-o output_path]
+python3 _tools/regenerate_index.py [target_dir] [-o output_path]
 ```
 
 - `target_dir`: Domain root containing subdirectories with `card.md` files (default: current working directory).
