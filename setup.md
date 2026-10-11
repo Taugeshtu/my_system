@@ -44,7 +44,7 @@ This file is primarily for agents. If you're doing manual setup — do your best
 
 8. **Bootstrap projects**: Go into PROJECTS. Pick 3 projects at random. Show the user the names and ask them to describe each one briefly. Create a `card.md` for each using their descriptions.
 
-9. **Generate projects index**: Run `build_index.py` on the PROJECTS directory to produce `index.md`.
+9. **Generate projects index**: Run `regenerate_index.py` on the PROJECTS directory to produce `index.md`.
 
 10. **Run work regenerator**: Run `regenerate_work.py` to populate WORK with symlinks to all active project task files.
 
